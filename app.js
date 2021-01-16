@@ -47,7 +47,7 @@ app.get("/adduser", (req, res) => {
   let sql = "INSERT INTO users SET ?";
   let query = db.query(sql, user, (err, result) => {
     if (err) throw err;
-    res.send("user added");
+    res.send("user added ");
   });
 });
 app.get("/adduser2", (req, res) => {
